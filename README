@@ -1,0 +1,16 @@
+
+This module implements discrete Fourier transforms.
+
+Computes the FFT and inverse FFT of a length N complex sequence.
+This is a rather simplistic, bare-bones implementation that uses
+recursion rather than looping.  It runs in O(N log N) time but is
+_not_ the fastest of algorithms.  Some simple optimizations have
+been made, but speed is not the main goal.
+
+Limitations
+-----------
+  -  requires that N is a power of 2
+
+  -  not the most memory efficient algorithm (returns a new
+     vector rather than performing it in place)
+
